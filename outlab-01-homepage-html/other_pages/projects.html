@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Yash Shah</title>
+  <link rel="shortcut icon" type="image/png" href="../assets/images/icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS Library -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- My CSS -->
+  <link rel="stylesheet" type="text/css" href="../assets/style.css" />
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Bootstrap JavaScript Library -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" style="box-shadow: 0 0.5em 1em rgba(0,0,0,0.6);">
+    <div class="container-fluid">
+      <div class="navbar-header"><a class="navbar-brand"><span><img src="../assets/images/ys.png" /> | Yash Shah</span></a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-collapsed">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="nav-collapsed">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="aboutme.html">About me</a></li>
+          <li class="active"><a href="#">Projects</a></li>
+          <li><a href="contactme.html">Contact me</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Title bar -->
+  <div class="row">
+    <div class="title-overlay text-center">
+      <font face="monospace">P r o j e c t s</font>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="container"  style="position:relative; margin-top: 120px; padding-top: 3%;">
+      <table class="table" style="width:60%; text-align: center; margin: auto auto; vertical-align:middle;">
+        <thead>
+		      <tr>
+            <td><div class="my-image"><img class="my-image-content" src="../assets/images/p1.jpg" /></div></td>
+            <td><div class="my-image"><img class="my-image-content" src="../assets/images/p2.jpg" /></div></td>
+            <td><div class="my-image"><img class="my-image-content" src="../assets/images/p3.jpg" /></div></td>
+            <td><div class="my-image"><img class="my-image-content" src="../assets/images/p4.jpg" /></div></td>
+            <td><div class="my-image"><img class="my-image-content" src="../assets/images/p5.jpg" /></div></td>
+          </tr>
+        </thead>
+		  </table>
+  </div>
+</div>
+
+  <div class="container" style="position:relative; padding-top: 3%;">
+    <div class="row" style="display:table-cell; padding-bottom:4%;">
+
+      <!-- Panels containing project heading and brief description -->
+      <div class="col-xs-3" style="height:100%; vertical-align:middle;">
+        <center><h4><font face="monospace">Some of my projects</h4><h5>Click to know more</h5></font></center>
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading" style="background: #411e41; color: rgba(255,255,255,0.6);">
+              <div onclick="show(1)" style="cursor:pointer;" class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapse1">CSEA Website</div>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse">
+              <div class="panel-body">
+              <strong>Summer 2017</strong><br>It involved developing an extensive website for the Computer Science and Engineering Association, IIT Bombay to be used as a platform for notifying the concerned regarding updates, upcoming events, photographs, council members and achievements.</div>
+              </div>
+          </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" style="background: #411e41; color: rgba(255,255,255,0.6);">
+                <div onclick="show(2)" style="cursor:pointer;" class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapse2">UnBlock Me Solver</div>
+              </div>
+              <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body"><strong>Summer 2017</strong><br>I developed a solver for the famous Unblock Me puzzle using Java SE 8 and Swing GUI. I implemented a brute force algorithm that gives a graphical, shortest, step-wise solution to the puzzle; which can be given as input either through the terminal or the GUI.</div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" style="background: #411e41; color: rgba(255,255,255,0.6);">
+                  <div onclick="show(3)" style="cursor:pointer;" class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapse3">Tank Wars - The Game</div>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse">
+                  <div class="panel-body"><strong>Spring 2017</strong><br>I developed an enjoyable, single-player tank-battle game using Racket with the objective of the game being destroying all enemies before they destroy us. The gameplay was simple, with 3 types each of weapons and enemies.</div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" style="background: #411e41; color: rgba(255,255,255,0.6);">
+                    <div onclick="show(4)" style="cursor:pointer;" class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapse4">Desktop Buddy</div>
+                  </div>
+                  <div id="collapse4" class="panel-collapse collapse">
+                    <div class="panel-body"><strong>Spring 2017</strong><br>This project was developed in Python by a group of five people for the <em>HACK-U Yahoo!</em> hackathon at IIT Bombay. It is basically a speech-cum-text based desktop manager that fetches news, cricket scores, weather forecast, downloads and plays songs and even changes the desktop background on giving a vocal or written command.</div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+          <div class="col-xs-9">
+              <div style="position:relative; width:100%; box-shadow:0 0 1em rgba(0,0,0,0.6); border-radius:10px; text-align: right; padding: 2em; overflow: wrap;">
+                <h3>I love developing.</h3>
+                <p>Nothing thrills me more than working on an exciting project.<br>What results later is a passionately completed piece-of-work, a happier-and-knowledge-enriched-me<br>and several new avenues to work upon.<br>Be it everyday puzzles or some sophisticated task, inspiration for a really cool project can come from anywhere -<br>So, all I do is wait and grab the opportunity as it arrives.<br><br></p><h5><strong>The complete collection of projects I have undertaken can be viewed <a href="https://www.github.com/ys1998">here</a></strong></h5>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+      </body>
+      </html>
